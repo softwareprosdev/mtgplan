@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ContactWidget } from "@/components/layout/ContactWidget";
+import { Analytics } from "@/components/seo/Analytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,6 +35,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.svg",
   },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
+  },
   robots: {
     index: true,
     follow: true,
@@ -55,6 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className="min-h-screen flex flex-col font-sans">
+        <Analytics />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
