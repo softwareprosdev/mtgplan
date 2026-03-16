@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none">
+  <path d="M24 4L4 16v14c0 10 8.5 17.5 20 22 11.5-4.5 20-12 20-22V16L24 4z" fill="#1e40af"/>
+  <path d="M24 14l-10 8v10h6v-6h8v6h6V22L24 14z" fill="white"/>
+  <text x="56" y="34" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="28" fill="#1c1917">MTG</text>
+  <text x="120" y="34" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="28" fill="#1e40af">Plan</text>
+</svg>
