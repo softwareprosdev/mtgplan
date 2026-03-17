@@ -11,11 +11,10 @@ export function VideoSection() {
         >
           <iframe
             className="absolute inset-0 w-full h-full rounded-xl"
-            src="https://www.youtube-nocookie.com/embed/KfaPQ4nuDX0?rel=0&vq=hd1080"
+            src="https://www.youtube-nocookie.com/embed/KfaPQ4nuDX0?autoplay=1&mute=1&loop=1&playlist=KfaPQ4nuDX0&controls=0&modestbranding=1&showinfo=0&rel=0&disablekb=1&iv_load_policy=3&vq=hd1080"
             title="See How Mortgage Protection Works"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            loading="lazy"
           />
         </div>
       </div>
