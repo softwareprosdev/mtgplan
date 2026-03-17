@@ -1,5 +1,3 @@
-import Script from "next/script";
-
 export function VideoSection() {
   return (
     <section className="bg-neutral-100 py-16 px-4">
@@ -11,23 +9,16 @@ export function VideoSection() {
           className="relative w-full"
           style={{ paddingBottom: "56.25%" }}
         >
-          <div
-            id="container-id"
-            className="absolute inset-0 w-full h-full rounded-xl overflow-hidden bg-neutral-200"
+          <iframe
+            className="absolute inset-0 w-full h-full rounded-xl"
+            src="https://www.youtube-nocookie.com/embed/KfaPQ4nuDX0?rel=0&vq=hd1080"
+            title="See How Mortgage Protection Works"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            loading="lazy"
           />
         </div>
-        <noscript>
-          <p className="text-center text-neutral-700 mt-4">
-            Please enable JavaScript to view the mortgage protection video.
-          </p>
-        </noscript>
       </div>
-      <Script
-        src="https://cdn.quoteandapply.io/widget.js"
-        strategy="lazyOnload"
-        data-strife-key="QY8KgZDZ5Bv6AfoB"
-        data-strife-container-id="container-id"
-      />
     </section>
   );
 }
